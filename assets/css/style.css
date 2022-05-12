@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: lightgray;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* start of header section */
+header {
+    padding: 50px 35px;
+    background-color: gray;
+}
+header h1 {
+    font-weight: bold;
+    font-size: 42px;
+    color: darkorange;
+    margin: 0;
+}
+header a {
+    text-decoration: none;
+    color: orange;
+}
+header nav {
+    float: right;
+    margin: 7px 0px;
+}
+header nav ul li {
+    display: inline;
+}
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 26px;
+}
+header h1 {
+    font-weight: bold;
+    font-size: 42px;
+    color: darkorange;
+    margin: 0;
+    display: inline;
+}
+.links {
+    color: orange; 
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none; 
+}
+/* end of header */
+
+/* project section */
+.project1 img {
+    width: 60%;
+    height: auto;
+}
+.project2 img {
+    width: 30%;
+    height: auto;
+}
+.project3 img {
+    width: 30%;
+    height: auto;
+}
+/* end of project section */
+
+/* start of footer */
+footer {
+    background-color:rgb(102, 138, 141);
+    padding: 40px 35px;
+    width: 100%;
+}
