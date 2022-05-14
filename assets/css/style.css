@@ -1,10 +1,17 @@
-*{
+:root {
+    --primary-color: lightgray;
+    --secondary-color: white;
+    --tertiary-color: lightslategray;
+    --4th-color: azure;
+  }*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
 body {
-    background-color: lightgray;
+    background-color: var(--4th-color);
     font-family: Helvetica, Arial, sans-serif;
 }
 /* start of header section */
@@ -15,12 +22,13 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 42px;
-    color: darkorange;
+    color: lightgray;
     margin: 0;
+    display: inline;
 }
 header a {
     text-decoration: none;
-    color: orange;
+    color: white;
 }
 header nav {
     float: right;
@@ -34,15 +42,9 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 26px;
 }
-header h1 {
-    font-weight: bold;
-    font-size: 42px;
-    color: darkorange;
-    margin: 0;
-    display: inline;
-}
+
 .links {
-    color: orange; 
+    color: white; 
     font-size: 20px;
     padding: 10px;
     text-decoration: none; 
@@ -51,7 +53,7 @@ header h1 {
 
 /* About-me section */
 .about-me {
-    color: blue;
+    color: var(--tertiary-color);
     font-size: 30px;
 }
 .about-me p {
@@ -63,13 +65,15 @@ header h1 {
 
 /* work section */
 .work-section {
-    color: blue;
+    color: var(--tertiary-color);
     font-size: 30px;
+    background-color: var(--primary-color);
+    display: flex;
 }
 .project1 img {
     width: 60%;
     height: auto;
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
@@ -95,15 +99,18 @@ header h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
-
 }
+.bottom-left1 {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
 /* end of project section */
 
 /* contact section */
 .contact {
     font-size: 30px;
-    color: blue;
+    color: var(--tertiary-color);
 }
 .contact-links {
     text-align: center;
