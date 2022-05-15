@@ -3,7 +3,8 @@
     --secondary-color: white;
     --tertiary-color: lightslategray;
     --4th-color: azure;
-  }*{
+  }
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -58,8 +59,10 @@ header nav ul li a {
     padding-block: 20px;
     margin: 20px;
     background-color: var(--primary-color);
+
 }
 .about-me img {
+    clear: both;
     float: left;
     width: 20%;
     height: auto;
@@ -70,7 +73,6 @@ header nav ul li a {
     font-size: 20px;
     border: 5px solid;
     border-color: black;
-    display: inline;
 }
 .bio p {
     font-size: 20px;
@@ -112,10 +114,6 @@ header nav ul li a {
     width: 35%;
     height: auto;
     padding: 10px;
-    border: 5px;
-    border-style: solid;
-    border-width: 30px 5px 30px 5px;
-    border-color: transparent;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -155,4 +153,70 @@ footer {
     background-color:rgb(102, 138, 141);
     padding: 40px 35px;
     width: 100%;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 50px;
+      justify-content: center;
+      position: relative;
+      text-align: left;
+    }
+
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+    }
+    header nav ul li a {
+      font-size: 1px;
+      text-align: center;
+      color: gray;
+    }
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+    .about-me {
+      width: 100%;
+      text-align: center;
+      margin: 20px, 20px, 20px, 20px;
+
+    }
+    .work-section h2 {
+      width: 100%;
+      text-align: center;
+    }
+    .contact {
+      width: 100%;
+      text-align: center;
+      margin: 20px, 20px, 20px, 20px;
+    }
+  }
+  
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    .about-me img {
+        clear: left;
+        display: flex;
+        justify-content: center;
+    }
+    .bio {
+        display: flex;
+        justify-content: center;
+        width: calc(100% - 0px - 0px);
+        text-align: center;
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+
 }
